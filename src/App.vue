@@ -3,6 +3,7 @@
     <MyHeader />
     <MyContent />
     <MyFooterTop />
+    <MyFooterBottom />
 
   </div>
 </template>
@@ -11,6 +12,7 @@
 import MyHeader from "./components/MyHeader.vue";
 import MyContent from "./components/MyContent.vue";
 import MyFooterTop from "./components/MyFooterTop.vue";
+import MyFooterBottom from "./components/MyFooterBottom.vue";
 
 
 export default {
@@ -19,6 +21,7 @@ export default {
     MyHeader,
     MyContent,
     MyFooterTop,
+    MyFooterBottom
   },
 };
 </script>

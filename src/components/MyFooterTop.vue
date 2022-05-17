@@ -103,7 +103,7 @@ export default {
             }
 
             h2{
-                margin-top: 1rem;
+                margin: 1rem 0;
                 text-transform: uppercase;
                 font-size: 1rem;
                 color: $myFooterTop-title-color ;
@@ -121,7 +121,7 @@ export default {
             }
 
             h2{
-                margin-top: 1rem;
+                margin: 1rem 0;
                 text-transform: uppercase;
                 font-size: 1rem;
                 color: $myFooterTop-title-color ;
@@ -139,7 +139,7 @@ export default {
             }
 
             h2{
-                margin-top: 1rem;
+                margin: 1rem 0;
                 text-transform: uppercase;
                 font-size: 1rem;
                 color: $myFooterTop-title-color ;
