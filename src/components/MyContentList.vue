@@ -1,14 +1,20 @@
 
 <template>
+
 <div class="main-contentList">
+    <div class="jumbotron">
+        <button class="jumbotron__button">current series</button>
+    </div>
+
     <div class="main-contentList__wrap">
     
- 
-    <MyContentData
-     v-for="(comic, index) in seriesData"  
-     :key="index" 
-     :bookInfo="comic"/>
-    </div>
+        <MyContentData
+        v-for="(comic, index) in seriesData"  
+        :key="index" 
+        :bookInfo="comic"/>
+        </div>
+
+        <button class="main-contentList__wrap__button">load more</button>
 
 </div>
     
@@ -105,16 +111,39 @@ export default {
 
     }
 }
-    
-
 
 </script>
 
 <style scoped lang="scss">
 @import "./style/variables.scss";
+@import "../components/style/common.scss";
+
+.jumbotron{
+    height: 20rem;
+    width: 100%;
+    background-image: url("../assets/img/jumbotron.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &__button {
+        position: absolute;
+        bottom: 0;
+        left: 10rem;
+        transform: translate(0, 50%);
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 550;
+        color: $myContent-text-color;
+        padding: .5rem 1rem;
+        background-color: $selected-and-bluBanner-background-color;
+        border: none;
+    }
+}
 
 .main-contentList {
     background-color: $myContent-section-background;
+    position: relative;
 
     .main-contentList__wrap{
         width: 70%;
@@ -123,9 +152,21 @@ export default {
         flex-wrap: wrap;
         padding: 5rem 0;
         
+        &__button {
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translate(-50%, 0);
+            text-transform: uppercase;
+            font-size: .6rem;
+            font-weight: 550;
+            color: $myContent-text-color;
+            padding: .3rem 2rem;
+            background-color: $selected-and-bluBanner-background-color;
+            border: none;
+        }
+
     }
-
-
 
 }
 
