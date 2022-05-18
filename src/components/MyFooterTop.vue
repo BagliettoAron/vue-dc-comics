@@ -34,7 +34,6 @@
 
         <div class="footer-top__right">
             <img src="../assets/img/dc-logo-bg.png" alt="">
-
         </div>
 
 
